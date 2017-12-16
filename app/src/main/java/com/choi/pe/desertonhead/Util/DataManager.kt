@@ -25,6 +25,8 @@ class DataManager(val context: Context) {
         editor?.apply()
     }
 
+    fun getId():String = preferences!!.getString("id", "nono1507")
+    fun getNickname():String = preferences!!.getString("nickname", "nono1507")
     fun getLoginData():Boolean = preferences!!.getBoolean("login",false)
 
 }

@@ -26,7 +26,7 @@ class LoginActivity : AppCompatActivity() {
             finish()
         }
         loginBtn.setOnClickListener {
-            var signInCall: Call<User> = NetworkHelper.networkInstance!!.Login(loginId.loginText, password.loginText)
+            var signInCall: Call<User> = NetworkHelper.networkInstance!!.Login(loginId.loginText.toString(), password.loginText.toString())
             signInCall.enqueue(object : Callback<User> {
                 override fun onResponse(call: Call<User>?, response: Response<User>?) {
                     Log.e("asd", "" + response?.code())
@@ -45,7 +45,6 @@ class LoginActivity : AppCompatActivity() {
                     Log.e("sign_up_fail", t?.message)
                 }
             })
-            toast(loginId.loginText + password.loginText)
         }
 
         register.setOnClickListener {

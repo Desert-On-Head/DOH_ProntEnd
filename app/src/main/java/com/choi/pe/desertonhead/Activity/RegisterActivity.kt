@@ -28,23 +28,23 @@ class RegisterActivity : AppCompatActivity() {
             var nickname = nicknameText.text.toString()
             if (id != "" && password_ != "" && rePassword != "" && email != "" && nickname != "") {
                 if (password_ == rePassword) {
-                    var register: Call<String> = NetworkHelper.networkInstance!!.Register(id, password_,nickname,email).apply {
-                        enqueue(object : Callback<String> {
-                            override fun onResponse(call: Call<String>?, response: Response<String>?) {
-                                if (response?.code() == 200) {
-                                    toast("회원가입 성공")
-                                    finish()
-                                }
-                                toast(response?.code().toString())
+                    var register: Call<String> = NetworkHelper.networkInstance!!.Register(id, password_, nickname, email)
+                    register.enqueue(object : Callback<String> {
+                        override fun onResponse(call: Call<String>?, response: Response<String>?) {
+                            if (response?.code() == 200) {
+                                toast("회원가입 성공")
+                                finish()
                             }
+                            toast(response?.code().toString())
+                        }
 
-                            override fun onFailure(call: Call<String>?, t: Throwable?) {
-                                Log.e("register", t?.message)
-                            }
-                        })
-                    }
+                        override fun onFailure(call: Call<String>?, t: Throwable?) {
+                            Log.e("register", t?.message)
+                        }
+                    })
+
                 }
-            }else{
+            } else {
                 toast("빈칸을 확인해주세요")
             }
         }

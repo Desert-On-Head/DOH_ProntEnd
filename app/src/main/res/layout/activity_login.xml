@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     android:background="@drawable/join_memvership_background"
     android:padding="16dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
     tools:context="com.choi.pe.desertonhead.Activity.LoginActivity">
 
     <ImageView
@@ -69,7 +71,7 @@
             android:layout_marginRight="2dp"
             android:text="@string/register"
             android:textColor="#fff"
-            android:textSize="12sp" />
+            android:textSize="17sp"/>
 
         <TextView
             android:id="@+id/slash"
@@ -77,7 +79,7 @@
             android:layout_height="wrap_content"
             android:text="@string/slash"
             android:textColor="#fff"
-            android:textSize="12sp" />
+            android:textSize="17sp" />
 
         <TextView
             android:id="@+id/findPassword"
@@ -87,6 +89,6 @@
             android:layout_marginStart="2dp"
             android:text="@string/forgot_your_password"
             android:textColor="#fff"
-            android:textSize="12sp" />
+            android:textSize="17sp" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
