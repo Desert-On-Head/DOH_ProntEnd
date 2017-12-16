@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LoginEditText">
+        <attr name="img" format="reference|integer" />
+        <attr name="text" format="reference|string" />
+        <attr name="size" format="reference|integer" />
+        <attr name="textColor" format="reference|integer" />
+        <attr name="hint" format="reference|string" />
+        <attr name="type" format="reference|integer"/>
+    </declare-styleable>
+</resources>

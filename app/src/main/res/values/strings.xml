@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DesertOnHead</string>
+    <string name="register">register</string>
+    <string name="slash">/</string>
+    <string name="forgot_your_password">Forgot your password</string>
+    <string name="id">id</string>
+    <string name="login">로그인</string>
+    <string name="name">이름</string>
+</resources>

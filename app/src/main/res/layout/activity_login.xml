@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.choi.pe.desertonhead.Activity.LoginActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="120dp"
+        android:layout_height="0dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toTopOf="@+id/loginId"
+        app:layout_constraintDimensionRatio="H,2:3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.choi.pe.desertonhead.Custom.CustomLogin
+        android:id="@+id/loginId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hint="아이디"
+        app:img="@mipmap/ic_face"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:type="0"/>
+
+    <com.choi.pe.desertonhead.Custom.CustomLogin
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hint="패스워드"
+        app:img="@mipmap/ic_password"
+        app:type="129"
+        app:textColor="000"
+        app:layout_constraintBottom_toTopOf="@+id/loginBtn"
+        app:layout_constraintDimensionRatio="H,8:1"
+        app:layout_constraintTop_toBottomOf="@+id/loginId" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/login_btn_back"
+        android:text="@string/login"
+        app:layout_constraintBottom_toTopOf="@id/optionBox"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/optionBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="2dp"
+            android:text="@string/register" />
+
+        <TextView
+            android:id="@+id/slash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/slash" />
+
+        <TextView
+            android:id="@+id/findPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginStart="2dp"
+            android:text="@string/forgot_your_password" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
