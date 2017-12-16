@@ -45,6 +45,7 @@
                 android:textSize="20sp" />
 
             <EditText
+                android:id="@+id/idText"
                 android:layout_width="0dp"
                 android:background="@drawable/bc_edittext_back"
                 android:layout_height="wrap_content"
@@ -70,6 +71,7 @@
                 android:textSize="20sp" />
 
             <EditText
+                android:id="@+id/passwordText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -94,6 +96,7 @@
                 android:textSize="20sp" />
 
             <EditText
+                android:id="@+id/rePasswordText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bc_edittext_back"
@@ -118,6 +121,7 @@
                 android:textSize="20sp" />
 
             <EditText
+                android:id="@+id/nicknameText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bc_edittext_back"
@@ -142,6 +146,7 @@
                 android:textSize="20sp" />
 
             <EditText
+                android:id="@+id/emailText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bc_edittext_back"
@@ -155,6 +160,7 @@
             android:layout_weight="1">
 
             <Button
+                android:id="@+id/registerBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
                 android:textColor="#fff"
