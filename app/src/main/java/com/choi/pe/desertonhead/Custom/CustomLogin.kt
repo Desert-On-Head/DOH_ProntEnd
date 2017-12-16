@@ -17,8 +17,8 @@ import com.choi.pe.desertonhead.R
  */
 
 class CustomLogin : ConstraintLayout {
-    internal var img: ImageView
-    internal var loginText: EditText
+    lateinit internal var img: ImageView
+    lateinit internal var loginText: EditText
 
     constructor(context: Context) : super(context) {
         initView()

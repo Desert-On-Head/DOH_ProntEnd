@@ -26,7 +26,7 @@ class LoginActivity : AppCompatActivity() {
             finish()
         }
         loginBtn.setOnClickListener {
-            var signInCall: Call<User> = NetworkHelper.networkInstance!!.Login(loginId.loginText.toString(), password.loginText.toString())
+            var signInCall: Call<User> = NetworkHelper.networkInstance!!.Login(loginId.getLoginText(), password.getLoginText())
             signInCall.enqueue(object : Callback<User> {
                 override fun onResponse(call: Call<User>?, response: Response<User>?) {
                     Log.e("asd", "" + response?.code())
