@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/join_memvership_background"
     android:orientation="vertical"
+    android:padding="16dp"
     android:weightSum="10"
     tools:context="com.choi.pe.desertonhead.Activity.RegisterActivity">
 
@@ -12,7 +14,11 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="4">
-
+        <ImageView
+            android:layout_centerInParent="true"
+            android:src="@mipmap/ic_round_person"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
     </RelativeLayout>
 
     <LinearLayout
@@ -20,7 +26,7 @@
         android:layout_height="0dp"
         android:layout_weight="6"
         android:orientation="vertical"
-        android:weightSum="5">
+        android:weightSum="6">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -34,14 +40,19 @@
                 android:layout_gravity="center"
                 android:layout_weight="2"
                 android:gravity="center"
-                android:text="@string/name"
+                android:text="ID"
+                android:textColor="#000"
                 android:textSize="20sp" />
 
             <EditText
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
+                android:background="@drawable/bc_edittext_back"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center" />
+                android:layout_gravity="center"
+                android:layout_weight="8"
+                android:textColor="#000" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -54,14 +65,18 @@
                 android:layout_gravity="center"
                 android:layout_weight="2"
                 android:gravity="center"
-                android:text="@string/name"
+                android:text="PW"
+                android:textColor="#000"
                 android:textSize="20sp" />
 
             <EditText
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center" />
+                android:layout_gravity="center"
+                android:background="@drawable/bc_edittext_back"
+                android:layout_weight="8" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -74,14 +89,18 @@
                 android:layout_gravity="center"
                 android:layout_weight="2"
                 android:gravity="center"
-                android:text="@string/name"
+                android:text="Re-PW"
+                android:textColor="#000"
                 android:textSize="20sp" />
 
             <EditText
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center" />
+                android:background="@drawable/bc_edittext_back"
+                android:layout_gravity="center"
+                android:layout_weight="8" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -94,14 +113,54 @@
                 android:layout_gravity="center"
                 android:layout_weight="2"
                 android:gravity="center"
-                android:text="@string/name"
+                android:text="닉네임"
+                android:textColor="#000"
                 android:textSize="20sp" />
 
             <EditText
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center" />
+                android:background="@drawable/bc_edittext_back"
+                android:layout_gravity="center"
+                android:layout_weight="8" />
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="이메일"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bc_edittext_back"
+                android:layout_gravity="center"
+                android:layout_weight="8" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textColor="#fff"
+                android:layout_centerInParent="true"
+                android:background="@drawable/login_btn_back"
+                android:text="회원가입" />
+        </RelativeLayout>
     </LinearLayout>
 </LinearLayout>

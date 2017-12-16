@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/join_memvership_background"
     android:padding="16dp"
     tools:context="com.choi.pe.desertonhead.Activity.LoginActivity">
 
@@ -26,7 +27,7 @@
         app:img="@mipmap/ic_face"
         app:layout_constraintBottom_toTopOf="@+id/password"
         app:layout_constraintTop_toBottomOf="@+id/logo"
-        app:type="0"/>
+        app:type="0" />
 
     <com.choi.pe.desertonhead.Custom.CustomLogin
         android:id="@+id/password"
@@ -34,11 +35,11 @@
         android:layout_height="wrap_content"
         app:hint="패스워드"
         app:img="@mipmap/ic_password"
-        app:type="129"
-        app:textColor="000"
         app:layout_constraintBottom_toTopOf="@+id/loginBtn"
         app:layout_constraintDimensionRatio="H,8:1"
-        app:layout_constraintTop_toBottomOf="@+id/loginId" />
+        app:layout_constraintTop_toBottomOf="@+id/loginId"
+        app:textColor="000"
+        app:type="129" />
 
     <Button
         android:id="@+id/loginBtn"
@@ -47,6 +48,7 @@
         android:layout_marginBottom="80dp"
         android:background="@drawable/login_btn_back"
         android:text="@string/login"
+        android:textColor="#fff"
         app:layout_constraintBottom_toTopOf="@id/optionBox"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
@@ -65,13 +67,17 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="2dp"
             android:layout_marginRight="2dp"
-            android:text="@string/register" />
+            android:text="@string/register"
+            android:textColor="#fff"
+            android:textSize="12sp" />
 
         <TextView
             android:id="@+id/slash"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/slash" />
+            android:text="@string/slash"
+            android:textColor="#fff"
+            android:textSize="12sp" />
 
         <TextView
             android:id="@+id/findPassword"
@@ -79,6 +85,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="2dp"
             android:layout_marginStart="2dp"
-            android:text="@string/forgot_your_password" />
+            android:text="@string/forgot_your_password"
+            android:textColor="#fff"
+            android:textSize="12sp" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
